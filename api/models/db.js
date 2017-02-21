@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-// DB connection
 var dbURI = 'mongodb://paczki:cats002@ds157459.mlab.com:57459/paczki';
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;
